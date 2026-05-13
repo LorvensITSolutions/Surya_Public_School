@@ -7,6 +7,9 @@ import {
   Shield,
 } from 'lucide-react'
 
+const whyUsBackgroundImage =
+  'https://res.cloudinary.com/dqiraozow/image/upload/f_auto,q_auto/v1778675481/IMG_0851_kylryl.heic'
+
 const reasons = [
   {
     icon: Leaf,
@@ -44,32 +47,47 @@ export default function WhyUs() {
   return (
     <section
       id="why-us"
-      className="scroll-mt-20 overflow-hidden bg-[#2C4C34] px-4 py-16 font-['Montserrat',sans-serif] sm:px-6 sm:py-20 lg:py-24"
+      className="relative scroll-mt-20 overflow-hidden bg-[#2C4C34] font-['Montserrat',sans-serif]"
       aria-labelledby="why-us-heading"
     >
-      <div className="mx-auto max-w-[1320px]">
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <img
+          src={whyUsBackgroundImage}
+          alt=""
+          className="h-full w-full object-cover object-center"
+          loading="lazy"
+          decoding="async"
+          aria-hidden
+        />
+      </div>
+      <div
+        className="pointer-events-none absolute inset-0 z-1 bg-[#2C4C34]/58"
+        aria-hidden
+      />
+
+      <div className="relative z-10 mx-auto max-w-[1320px] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-bold tracking-[0.25em] text-[#D6A51A] uppercase">
             Why choose us
           </p>
           <h2
             id="why-us-heading"
-            className="mt-4 text-3xl font-black leading-[1.1] tracking-tight text-[#FFFFFF] sm:text-4xl lg:text-5xl"
+            className="mt-4 text-3xl font-black leading-[1.1] tracking-tight text-[#FFFFFF] sm:text-3xl lg:text-4xl"
           >
             What sets Surya Public School apart
           </h2>
           <p className="mt-5 text-sm font-semibold italic leading-relaxed text-[#FFFFFF] sm:text-base lg:text-lg">
             Our approach combines a joyful environment with structured academics
-            and strong values—so every child can thrive with confidence and
+            and strong values — so every child can thrive with confidence and
             curiosity.
           </p>
         </div>
 
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-5 rounded-2xl">
+        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-5">
           {reasons.map(({ icon: Icon, title, text }) => (
             <li
               key={title}
-              className="group flex gap-4 border-b-2 border-[#D6A51A] bg-[#FFFFFF] px-5 py-5 shadow-sm transition hover:border-[#2C4C34] sm:flex-col sm:gap-0 sm:px-6 sm:py-6 lg:flex-col lg:gap-0"
+              className="group flex gap-4 rounded-lg border-2 border-[#D6A51A] bg-[#FFFFFF]/60 px-5 py-5 shadow-sm transition hover:border-[#2C4C34] sm:flex-col sm:gap-0 sm:px-6 sm:py-6 lg:flex-col lg:gap-0"
             >
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#2C4C34] text-[#D6A51A] transition group-hover:bg-[#D6A51A] group-hover:text-[#2C4C34]">
                 <Icon size={22} strokeWidth={2} aria-hidden />
