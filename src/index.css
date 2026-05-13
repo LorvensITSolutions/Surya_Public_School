@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply m-0 antialiased bg-[#FFFFFF] text-[#2C4C34];
+  }
+
+  #root {
+    @apply flex min-h-svh w-full flex-col;
+  }
+}
