@@ -293,7 +293,7 @@ export const galleryEvents = [
     summary:
       'Students learn about the Bathukamma festival and its significance in Telugu culture.',
     description: [
-      'Students learn about the Bathukamma festival and its significance in Telugu culture.',
+      'Students learn about the Bathukamma festival and its significance in Telugu culture. Students learn about the Bathukamma festival and its significance in Telugu culture. ',
     ],
     stats: [
       { label: 'Participants', value: 'Whole school', subtext: 'Bathukamma festival' },
