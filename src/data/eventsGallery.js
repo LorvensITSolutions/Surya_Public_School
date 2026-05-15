@@ -9,7 +9,7 @@ export const galleryEvents = [
     category: 'Cultural',
     featured: true,
     summary:
-      'Students showcase talent through music, dance, and drama — celebrating creativity and teamwork on our biggest stage of the year.',
+      'Students showcase talent through music, dance, and drama - celebrating creativity and teamwork on our biggest stage of the year.',
     description: [
       'Annual Day brings the whole school together for an evening of performances, awards, and community pride. Families join us to see classrooms come alive as performances, speeches, and cultural items reflect our motto: inspiring ethics and igniting curiosity.',
     ],
@@ -41,7 +41,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'Annual Day closes with applause, awards, and a shared sense of belonging—reminding students that effort, ethics, and curiosity are worth celebrating.',
+      'Annual Day closes with applause, awards, and a shared sense of belonging - reminding students that effort, ethics, and curiosity are worth celebrating.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778756372/Screenshot_2026-05-14_162917_zxufz1.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778824798/ChatGPT_Image_May_15_2026_11_29_32_AM_afzvwv.png',
@@ -57,7 +57,7 @@ export const galleryEvents = [
     summary:
       'Hands-on cooking builds life skills, hygiene habits, and confidence as students prepare and share simple meals together.',
     description: [
-      'Activity-based learning extends to the kitchen: students follow recipes, measure ingredients, and understand nutrition in a safe, guided setting. The day ends with a shared tasting—reinforcing collaboration and respect for food and culture.',
+      'Activity-based learning extends to the kitchen: students follow recipes, measure ingredients, and understand nutrition in a safe, guided setting. The day ends with a shared tasting - reinforcing collaboration and respect for food and culture.',
     ],
     stats: [
       { label: 'Participants', value: '120+', subtext: 'Students per session' },
@@ -87,7 +87,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'The day ends with a shared tasting—reinforcing collaboration and respect for food and culture.',
+      'The day ends with a shared tasting - reinforcing collaboration and respect for food and culture.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778756112/Screenshot_2026-05-14_162502_gdivax.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778824228/413410a3-56f0-4e46-aee5-0b56cfc788db_fghe87.png',
@@ -102,7 +102,7 @@ export const galleryEvents = [
     category: 'National',
     featured: false,
     summary:
-      'Students learn about India’s regions, languages, and traditions — building respect and belonging in our diverse community.',
+      'Students learn about India’s regions, languages, and traditions - building respect and belonging in our diverse community.',
     description: [
       'Class displays, dress themes, and short presentations help children appreciate unity without losing local identity. Teachers connect themes to values of empathy and national integration.',
     ],
@@ -134,7 +134,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'Children leave with pride in their roots and openness to others—building a school culture where every background is welcomed.',
+      'Children leave with pride in their roots and openness to others - building a school culture where every background is welcomed.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778756267/Screenshot_2026-05-14_162718_iwkxlm.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778824355/ChatGPT_Image_May_15_2026_11_22_09_AM_olujjs.png',
@@ -149,7 +149,7 @@ export const galleryEvents = [
     category: 'Festival',
     featured: false,
     summary:
-      'Carols, craft, and a spirit of giving—students celebrate the season with joy and reflection.',
+      'Carols, craft, and a spirit of giving - students celebrate the season with joy and reflection.',
     description: [
       'Decorated campus corners, choir performances, and classroom activities make the festival meaningful and inclusive. We emphasise kindness, sharing, and gratitude alongside the festive fun.',
     ],
@@ -181,7 +181,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'The celebration closes with carols and smiles—reminding students that festivals are as much about character as they are about fun.',
+      'The celebration closes with carols and smiles - reminding students that festivals are as much about character as they are about fun.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778758475/ChatGPT_Image_May_14_2026_05_03_57_PM_oe6vqu.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778824980/ChatGPT_Image_May_15_2026_11_32_54_AM_pt4ecb.png',
@@ -228,7 +228,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'Students return with sketches, questions, and pride in local heritage—linking classroom history to the monuments in their own region.',
+      'Students return with sketches, questions, and pride in local heritage - linking classroom history to the monuments in their own region.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778758746/ChatGPT_Image_May_14_2026_05_08_53_PM_ixw2vg.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778828137/IMG_0865.jpg_dpxggu.jpg',
@@ -277,7 +277,7 @@ export const galleryEvents = [
       },
     ],
     outcome:
-      'Reflection sessions turn a day in the field into lasting understanding—connecting industry, safety, and environment to what students study in class.',
+      'Reflection sessions turn a day in the field into lasting understanding - connecting industry, safety, and environment to what students study in class.',
     images: [
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778759664/Our_students_in_field_visit_hjejmt.png',
       'https://res.cloudinary.com/dqiraozow/image/upload/v1778827596/Screenshot_2026-05-15_121606_jhivg5.png',
@@ -301,7 +301,30 @@ export const galleryEvents = [
       { label: 'Focus areas', value: '3 topics', subtext: 'Bathukamma festival' },
     ],
     learnItems: [
-      { icon: 'heart', title: 'Bathukamma festival', description: 'Bathukamma festival' },
+      {
+        icon: 'leaf',
+        title: 'Floral art',
+        description:
+          'Stacking and arranging seasonal flowers teaches patience, colour, and teamwork.',
+      },
+      {
+        icon: 'music',
+        title: 'Folk songs & dance',
+        description:
+          'Traditional Bathukamma songs connect students to Telangana’s living heritage.',
+      },
+      {
+        icon: 'users',
+        title: 'Family & community',
+        description:
+          'Parents and elders join campus celebrations and share stories at home.',
+      },
+      {
+        icon: 'heart',
+        title: 'Cultural pride',
+        description:
+          'Students honour local customs with respect, joy, and inclusive participation.',
+      },
     ],
     outcome:
       'Students learn about the Bathukamma festival and its significance in Telugu culture.',
