@@ -113,7 +113,7 @@ export default function Navbar() {
 
           <div className="hidden items-center lg:flex">
             <Link
-              to="/#contact-us"
+              to="/admissions"
               className="rounded-lg bg-[#D6A51A] px-4 py-2 text-[13px] font-extrabold text-[#2C4C34] transition hover:opacity-90 sm:px-5 sm:text-[14px]"
             >
               Contact Us
@@ -241,7 +241,7 @@ export default function Navbar() {
                 className="shrink-0 border-t border-[#2C4C34]/10 px-6 py-8 sm:px-10"
               >
                 <Link
-                  to="/#contact-us"
+                  to="/admissions"
                   onClick={() => setMenuOpen(false)}
                   className="flex w-full items-center justify-center rounded-xl bg-[#D6A51A] px-6 py-4 text-base font-extrabold text-[#2C4C34] transition hover:opacity-90"
                 >
