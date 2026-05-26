@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import { galleryEvents } from '../data/eventsGallery'
 
 export default function EventsGalleryIndex() {
@@ -59,6 +60,7 @@ export default function EventsGalleryIndex() {
           </ul>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

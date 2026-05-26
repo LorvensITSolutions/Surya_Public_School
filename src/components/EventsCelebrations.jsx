@@ -19,7 +19,7 @@ export default function EventsCelebrations() {
               viewport={{ once: true, margin: '-40px' }}
               className="mb-4 flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-[#D6A51A] uppercase"
             >
-              <Camera size={16} /> Campus Highlights
+               Campus Highlights
             </motion.div>
             <h2 className="text-4xl font-black text-[#2C4C34] md:text-5xl">
               Moments that <span className="text-[#D6A51A]">inspire</span> <br />{' '}

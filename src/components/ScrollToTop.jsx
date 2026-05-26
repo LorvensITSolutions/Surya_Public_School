@@ -1,16 +1,32 @@
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
+function scrollToHash(hash) {
+  const id = hash.replace(/^#/, '')
+  if (!id) return false
+  const el = document.getElementById(id)
+  if (!el) return false
+  el.scrollIntoView({ block: 'start' })
+  return true
+}
+
 /**
- * Scrolls the window to the top whenever the route pathname changes
- * (e.g. home card → event detail, or between events).
+ * Scrolls to top on route change, or to the target section when the URL has a hash.
  */
 export default function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0)
+      return
+    }
+
+    if (scrollToHash(hash)) return
+
+    const t = window.setTimeout(() => scrollToHash(hash), 0)
+    return () => window.clearTimeout(t)
+  }, [pathname, hash])
 
   return null
 }

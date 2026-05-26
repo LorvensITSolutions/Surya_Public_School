@@ -1,7 +1,9 @@
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import AboutUs from '../components/AboutUs'
 import EventsCelebrations from '../components/EventsCelebrations'
+import Admissions from '../components/Admissions'
 import WhyUs from '../components/WhyUs'
 
 export default function Home() {
@@ -11,10 +13,11 @@ export default function Home() {
       <main className="m-0 flex flex-1 flex-col gap-0 p-0">
         <HeroSection />
         <AboutUs />
-        
+        <Admissions />
         <WhyUs />
         <EventsCelebrations />
       </main>
+      <Footer />
     </div>
   )
 }

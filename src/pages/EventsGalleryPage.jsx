@@ -2,23 +2,21 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   ArrowRight,
-  Calendar,
   Droplet,
   Globe,
   HardHat,
   Heart,
-  ImageIcon,
   Landmark,
   Leaf,
   MessageCircle,
   Music,
   Quote,
-  Share2,
   Sparkles,
   Users,
   Utensils,
 } from 'lucide-react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import { getEventById, galleryEvents } from '../data/eventsGallery'
 
 const DRAG_THRESHOLD_PX = 56
@@ -45,7 +43,6 @@ function LearnIcon({ name }) {
 function EventGalleryDetail({ event }) {
   const [slide, setSlide] = useState(0)
   const dragStartX = useRef(null)
-  const galleryRef = useRef(null)
   const imgs = event.images
 
   const goNext = useCallback(() => {
@@ -95,24 +92,6 @@ function EventGalleryDetail({ event }) {
     dragStartX.current = null
   }
 
-  function scrollToGallery() {
-    galleryRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  }
-
-  async function handleShare() {
-    const url = window.location.href
-    const payload = { title: event.title, text: event.summary, url }
-    try {
-      if (navigator.share) {
-        await navigator.share(payload)
-      } else {
-        await navigator.clipboard.writeText(url)
-      }
-    } catch {
-      /* user cancelled or unsupported */
-    }
-  }
-
   return (
     <main className="flex-1 px-4 py-10 sm:px-6 sm:py-14 lg:py-16">
       <div className="mx-auto max-w-[1200px]">
@@ -148,7 +127,6 @@ function EventGalleryDetail({ event }) {
 
           <div
             id="event-gallery"
-            ref={galleryRef}
             className="min-w-0 w-full lg:justify-self-end"
           >
             <div
@@ -321,6 +299,7 @@ export default function EventsGalleryPage() {
             All events &amp; gallery
           </Link>
         </main>
+        <Footer />
       </div>
     )
   }
@@ -329,6 +308,7 @@ export default function EventsGalleryPage() {
     <div className="flex min-h-svh flex-col bg-[#FFFFFF] font-['Montserrat',sans-serif]">
       <Navbar />
       <EventGalleryDetail key={event.id} event={event} />
+      <Footer />
     </div>
   )
 }
