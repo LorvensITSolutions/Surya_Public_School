@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block non-content paths if added later
+Disallow: /api/
+
+Sitemap: /sitemap.xml
