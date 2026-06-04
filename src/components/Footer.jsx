@@ -126,9 +126,17 @@ export default function Footer() {
           <p className="text-center text-xs font-medium text-[#FFFFFF]/60 sm:text-left">
             © {year} {schoolInfo.name}. All rights reserved.
           </p>
-          <p className="text-center text-xs font-semibold text-[#D6A51A]/90">
-            Aswaraopeta · Telangana
-          </p>
+          <div className="flex flex-col items-center gap-2 sm:items-end">
+            <Link
+              to="/privacy-policy"
+              className="text-xs font-semibold text-[#FFFFFF]/80 transition hover:text-[#D6A51A]"
+            >
+              Privacy Policy
+            </Link>
+            <p className="text-center text-xs font-semibold text-[#D6A51A]/90 sm:text-right">
+              Aswaraopeta · Telangana
+            </p>
+          </div>
         </div>
       </div>
     </footer>

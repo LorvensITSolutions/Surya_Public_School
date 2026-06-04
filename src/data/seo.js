@@ -57,6 +57,13 @@ export const staticRoutes = [
     title: `Events & Gallery | ${SITE_NAME}`,
     description: `Campus events, celebrations, and activities at ${SITE_NAME} — Annual Day, festivals, field trips, and more.`,
   },
+  {
+    path: '/privacy-policy',
+    changefreq: 'yearly',
+    priority: '0.4',
+    title: `Privacy Policy | ${SITE_NAME}`,
+    description: `Privacy Policy for ${SITE_NAME} website — how we collect, use, and protect your information.`,
+  },
 ]
 
 export function getEventPath(eventId) {

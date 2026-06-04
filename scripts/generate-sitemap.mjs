@@ -16,6 +16,7 @@ const staticPages = [
   { path: '/about', changefreq: 'monthly', priority: '0.9' },
   { path: '/admissions', changefreq: 'weekly', priority: '0.95' },
   { path: '/events-gallery', changefreq: 'weekly', priority: '0.85' },
+  { path: '/privacy-policy', changefreq: 'yearly', priority: '0.4' },
 ]
 
 function escapeXml(str) {
